@@ -11,3 +11,12 @@ $ npm install -g artillery@latest
 ```bash
 $ docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=somepassword -e MYSQL_DATABASE=shortenurl -p 3306:3306 -d mysql:latest
 ```
+
+### test artillery
+```bash
+# 테스트 스크립트 실행 및 결과 저장
+artillery run create-load-test.yaml -o create-load-report.json
+
+# HTML 보고서 생성
+artillery report --output create-load-report.html create-load-report.json
+```
