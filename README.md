@@ -25,7 +25,11 @@ artillery report --output create-load-report.html create-load-report.json
 
 #### POST
 
+- default
 ![step_post_0.png](src/main/resources/static/images/step_post_0.png)
-
+- connection pool 1
+![step_post_1.png](src/main/resources/static/images/step_post_1.png)
+- key generator (snowflake)
+![step_post_2.png](src/main/resources/static/images/step_post_2.png)
 #### GET
 ![step_get_0.png](src/main/resources/static/images/step_get_0.png)
