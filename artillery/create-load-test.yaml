@@ -1,0 +1,17 @@
+config:
+  target: "http://158.247.205.41:8080"
+  phases:
+    - duration: 100 # 100번 요청
+      arrivalRate: 10 # 초당 10번 요청
+      rampTo: 100 # 점진적으로 100번까지 증가
+  payload:
+    path: "urls.csv"
+    fields:
+      - "url"
+scenarios:
+  - name: "create shortenUrl"
+    flow:
+      - post:
+          url: "/shortenUrl"
+          json:
+            originalUrl: "{{ url }}"
