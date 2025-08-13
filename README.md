@@ -20,3 +20,12 @@ artillery run create-load-test.yaml -o create-load-report.json
 # HTML 보고서 생성
 artillery report --output create-load-report.html create-load-report.json
 ```
+
+### 튜닝 비교
+
+#### POST
+
+![step_post_0.png](src/main/resources/static/images/step_post_0.png)
+
+#### GET
+![step_get_0.png](src/main/resources/static/images/step_get_0.png)
