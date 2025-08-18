@@ -68,3 +68,7 @@ artillery report --output create-load-report.html create-load-report.json
 ![step_get_1.png](src/main/resources/static/images/step_get_1.png)
 - add index
 ![step_get_2.png](src/main/resources/static/images/step_get_2.png)
+- concurrent hash map
+![step_get_3.png](src/main/resources/static/images/step_get_3.png)
+- redis
+![step_get_4.png](src/main/resources/static/images/step_get_4.png)
