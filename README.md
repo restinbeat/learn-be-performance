@@ -52,6 +52,10 @@ artillery run create-load-test.yaml -o create-load-report.json
 artillery report --output create-load-report.html create-load-report.json
 ```
 
+### test ngrinder
+docker run -d -v ~/ngrinder-controller:/opt/ngrinder-controller --name controller -p 80:80 -p 16001:16001 -p 12000-12009:12000-12009 ngrinder/controller
+docker run -d --name agent --link controller:controller ngrinder/agent
+
 ### 튜닝 비교
 
 #### POST
