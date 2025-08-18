@@ -11,6 +11,6 @@ public interface JpaShortenUrlRepository extends JpaRepository<ShortenUrl, Long>
 
     @Modifying
     @Transactional
-    @Query("UPDATE shorten_url SET shorten_url.redirectCount = shorten_url.redirectCount + 1 WHERE shorten_url.shortenUrlKey = :shortenUrlKey")
+    @Query("UPDATE ShortenUrl s SET s.redirectCount = s.redirectCount + 1 WHERE s.shortenUrlKey = :shortenUrlKey")
     int incrementRedirectCount(String shortenUrlKey);
 }
